@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North India Explored - Discover Authentic Journeys</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Realistic Website Styling */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #495057;
+            background-color: #f8f9fa;
+            line-height: 1.6;
+        }
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            color: #212529 !important;
+            font-weight: bold;
+        }
+        .nav-link {
+            color: #495057 !important;
+            padding: 0.8rem 1.2rem !important;
+            transition: color 0.3s ease;
+        }
+        .nav-link:hover {
+            color: #007bff !important;
+        }
+        .hero {
+            background-image: url('download (1).jpg'); /* Set the local image as background */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            padding: 180px 0;
+            position: relative;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Slightly darker overlay */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h1 {
+            font-size: 4rem;
+            margin-bottom: 25px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .hero p.lead {
+            font-size: 1.7rem;
+            margin-bottom: 40px;
+            font-weight: 300;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        .btn-primary {
+            background-color: #007bff;
+            border-color: #007bff;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, border-color 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+            border-color: #0056b3;
+        }
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            color: #212529;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+        .adventure-item {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+            margin-bottom: 30px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+        .adventure-item:hover {
+            transform: translateY(-5px);
+        }
+        .adventure-item img {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            display: block;
+        }
+        .adventure-content {
+            padding: 25px;
+        }
+        .adventure-content h3 {
+            font-size: 1.8rem;
+            margin-bottom: 12px;
+            color: #343a40;
+            font-weight: 600;
+        }
+        .adventure-content p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: #6c757d;
+            margin-bottom: 18px;
+        }
+        .adventure-highlights {
+            margin-bottom: 15px;
+        }
+        .adventure-highlights strong {
+            color: #007bff;
+            font-weight: 500;
+        }
+        .adventure-meta {
+            font-size: 0.9rem;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+        .btn-outline-primary {
+            color: #007bff;
+            border-color: #007bff;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+        }
+        .btn-outline-primary:hover {
+            background-color: #007bff;
+            color: #fff;
+            border-color: #007bff;
+        }
+        #our-story {
+            padding: 80px 0;
+            background-color: #e9ecef;
+        }
+        #our-story p {
+            font-size: 1.1rem;
+            color: #495057;
+        }
+        #contact-us {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        #contact-us h2 {
+            text-align: left;
+            margin-bottom: 35px;
+        }
+        #contact-us p.lead {
+            font-size: 1.2rem;
+            text-align: left;
+            margin-bottom: 30px;
+        }
+        #contact-us .form-group label {
+            font-weight: 500;
+            color: #343a40;
+        }
+        footer {
+            background-color: #343a40;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9rem;
+        }
+        footer a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        footer a:hover {
+            color: #007bff;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">North India Explored</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#adventures">Discover Regions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#our-story">Our Story</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-us">Connect With Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <h1>Experience the Soul of North India</h1>
+            <p class="lead">Uncover diverse landscapes, ancient history, and vibrant cultures. Your authentic Indian journey starts here.</p>
+            <a href="#adventures" class="btn btn-primary btn-lg">Explore Our Destinations</a>
+        </div>
+    </header>
+
+    <section id="our-story" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Our Philosophy</h2>
+            <p class="lead text-center">We believe in immersive and responsible travel, connecting you deeply with the heart and soul of North India. Our carefully curated journeys focus on authentic experiences, supporting local communities, and providing you with memories that last a lifetime.</p>
+            <p>At North India Explored, our team comprises passionate travel experts who have lived and explored this incredible region extensively. We go beyond the typical tourist trails to bring you unique encounters, from savoring home-cooked meals with local families to witnessing age-old traditions firsthand. Our commitment is to provide comfortable and reliable transportation, primarily utilizing well-maintained buses and private cars, ensuring a smooth and enjoyable travel experience.</p>
+        </div>
+    </section>
+
+    <section id="adventures" class="py-5">
+        <div class="container">
+            <h2 class="section-title">Explore the Gems of North India</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="adventure-item">
+                        <img src="C:\Users\hp\Downloads\ChatGPT Image Apr 13, 2025, 05_01_25 PM.png" alt="Rajasthan - The Land of Kings">
+                        <div class="adventure-content">
+                            <h3>NorthWestern India : Land of Kings</h3>
+                            <p class="adventure-highlights"><strong>Highlights:</strong> Majestic Forts & Palaces, Vibrant Culture & Festivals</p>
+                            <p>Discover the regal heritage of Rajasthan, from the pink city of Jaipur to the golden sands of Jaisalmer. Explore magnificent forts, intricate palaces, and bustling bazaars. Immerse yourself in the colorful traditions, captivating music, and the warm hospitality of the desert people.</p>
+                            <p class="adventure-meta"><i class="fas fa-utensils"></i> Authentic Rajasthani Cuisine Included</p>
+                            <p class="adventure-meta"><i class="fas fa-bus"></i> Comfortable Transportation</p>
+                            <a href="file:///C:/Users/hp/Documents/newindex.html#explore-states" class="btn btn-outline-primary btn-sm">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="adventure-item">
+                        <img src="C:\Users\hp\Downloads\ChatGPT Image Apr 13, 2025, 05_33_28 PM.png" alt="Punjab - The Land of Five Rivers">
+                        <div class="adventure-content">
+                            <h3>Punjab: The Land of Five Rivers</h3>
+                            <p class="adventure-highlights"><strong>Highlights:</strong> The Golden Temple, Rich Sikh Heritage & Culture</p>
+                            <p>Experience the spiritual heart of India at the Golden Temple in Amritsar. Witness the vibrant culture, energetic Bhangra dance, and the heartwarming hospitality of the Punjabi people. Explore historical sites and savor the rich and flavorful cuisine of this fertile land.</p>
+                            <p class="adventure-meta"><i class="fas fa-bread-slice"></i> Indulge in Punjabi Delicacies</p>
+                            <p class="adventure-meta"><i class="fas fa-car"></i> Flexible Travel Options</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Explore Punjab</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="adventure-item">
+                        <img src="C:\Users\hp\Downloads\ChatGPT Image Apr 13, 2025, 05_34_52 PM.png" alt="Himachal Pradesh - Abode of Snow">
+                        <div class="adventure-content">
+                            <h3>Himachal Pradesh: Abode of Snow</h3>
+                            <p class="adventure-highlights"><strong>Highlights:</strong> Stunning Himalayan Landscapes, Adventure Activities</p>
+                            <p>Escape to the breathtaking beauty of the Himalayas. Explore charming hill stations like Shimla and Manali, trek through scenic valleys, and experience thrilling adventure activities. Discover the serene monasteries and the unique culture of this mountain paradise.</p>
+                            <p class="adventure-meta"><i class="fas fa-hiking"></i> Opportunities for Trekking & Nature Walks</p>
+                            <p class="adventure-meta"><i class="fas fa-mountain"></i> Guided Mountain Excursions</p>
+                            <a href="#" class="btn btn-outline-primary btn-sm">Discover Himachal</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-us" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <h2 class="section-title">Connect With Our Travel Experts</h2>
+                    <p class="lead text-center">Have questions about our tours or ready to customize your North Indian adventure? Reach out to us – we're here to help you craft the perfect journey.</p>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">How Can We Assist You?</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Tell us about your interests or specific requests"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Send Your Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2025 North India Explored. All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

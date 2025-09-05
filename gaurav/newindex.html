@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Adventure - North-Western India</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #343a40 !important;
+        }
+
+        .navbar-brand {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+        }
+
+        .jumbotron {
+            background-image: url('frontindia.jpg'); /* Your image path */
+            background-size: cover; /* Cover the entire container */
+            background-position: center; /* Center the image */
+            color: white;
+            padding: 150px 0;
+            text-align: center;
+            margin-bottom: 0;
+            border-radius: 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .jumbotron::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for better text readability */
+        }
+
+        .jumbotron-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .jumbotron-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .explore-section {
+            padding: 60px 0;
+            background-color: #fff;
+        }
+
+        .state-card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .state-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .state-card h3 {
+            color: #e67e22; /* A vibrant accent color */
+            font-family: 'Playfair Display', serif;
+            margin-bottom: 15px;
+        }
+
+        .state-card p {
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        .btn-discover {
+            background-color: #2980b9; /* Another appealing color */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 12px 25px;
+            font-weight: 600;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .btn-discover:hover {
+            background-color: #3498db;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #f8f9fa;
+            margin: 0 15px;
+            font-size: 1.2rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .footer a:hover {
+            color: #ddd;
+        }
+
+        .footer-contact {
+            margin-top: 20px;
+        }
+
+        .footer-contact p {
+            margin-bottom: 5px;
+        }
+
+        .highlight {
+            color: #e67e22;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="D:\tour adventures\gaurav\decstopfinal.html">Tour Adventure</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="D:\tour adventures\gaurav\newindex.html">North-Western India <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="D:\tour adventures\gaurav\bookrajesthan.html">Rajasthan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="D:\tour adventures\gaurav\bookgujrat.html">Gujarat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="D:\tour adventures\gaurav\bookmp.html">Madhya Pradesh</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="D:\tour adventures\gaurav\bookup.html">Uttar Pradesh</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container jumbotron-content">
+            <h1 class="jumbotron-heading">Unveiling the Wonders of North-Western India</h1>
+            <p class="lead">Embark on an unforgettable journey through the vibrant landscapes, rich cultures, and historical marvels of Rajasthan, Gujarat, Madhya Pradesh, and Uttar Pradesh.</p>
+            <a href="#explore-states" class="btn btn-light btn-lg">Start Exploring</a>
+        </div>
+    </div>
+
+    <section id="explore-states" class="explore-section">
+        <div class="container">
+            <h2 class="mb-5 text-center" style="color: #2c3e50; font-family: 'Playfair Display', serif;">Discover Your Next Adventure</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="state-card">
+                        <h3><i class="fas fa-crown mr-2"></i> Explore Rajasthan - The Land of Kings</h3>
+                        <p>Step into the majestic realm of Rajasthan, where every corner whispers tales of valor and grandeur. Discover magnificent forts, vibrant cities, and a rich cultural heritage.</p>
+                        <a href="D:\tour adventures\gaurav\bookrajesthan.html" class="btn btn-discover">Discover Rajasthan</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="state-card">
+                        <h3><i class="fas fa-palette mr-2"></i> Discover Gujarat - Vibrant Traditions and Flavors</h3>
+                        <p>Gujarat's culture is a captivating blend of ancient heritage and contemporary vibrancy. Experience colorful festivals, exquisite handicrafts, and a unique culinary journey.</p>
+                        <a href="D:\tour adventures\gaurav\bookgujrat.html" class="btn btn-discover" style="background-color: #27ae60;">Explore Gujarat</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-6">
+                    <div class="state-card">
+                        <h3><i class="fas fa-heartland mr-2"></i> Unveil Madhya Pradesh - The Heart of Incredible India</h3>
+                        <p>Madhya Pradesh, aptly named the "Heart of India," is a treasure trove of historical sites, spiritual sanctuaries, and diverse natural beauty.</p>
+                        <a href="D:\tour adventures\gaurav\bookmp.html" class="btn btn-discover" style="background-color: #f39c12;">Visit Madhya Pradesh</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="state-card">
+                        <h3><i class="fas fa-om mr-2"></i> Experience Uttar Pradesh - The Land of History and Spirituality</h3>
+                        <p>Uttar Pradesh, the land of the iconic Taj Mahal, is deeply rooted in both Hindu and Islamic traditions, offering a profound cultural and spiritual experience.</p>
+                        <a href="D:\tour adventures\gaurav\bookup.html" class="btn btn-discover" style="background-color: #3498db;">Explore Uttar Pradesh</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+                <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p>Email: <a href="mailto:info@touradventure.com">info@touradventure.com</a></p>
+                <p>Phone: +91 1234567890</p>
+            </div>
+            <p>&copy; 2025 Tour Adventure. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
